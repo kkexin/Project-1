@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Defines the theme for the application, inheriting from a base theme -->
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication">
+        <!-- Sets the color of the navigation bar to transparent -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Sets the color of the status bar to transparent -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Determines whether the status bar icons should be light or dark based on the theme -->
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+</resources>

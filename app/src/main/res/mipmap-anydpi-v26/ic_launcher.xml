@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root element for defining an adaptive icon in Android -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Defines the drawable resource for the foreground layer of the icon.
+         This layer typically contains the main part of the icon, such as a logo or other prominent elements.
+         It is often designed to scale or move when the icon is displayed in different shapes (e.g., circular, squircle, etc.). -->
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+
+    <!-- Defines the drawable resource for the background layer of the icon.
+         This layer provides a solid background or simple design behind the foreground elements.
+         The background remains static and fills the space behind the foreground when the icon shape changes. -->
+    <background android:drawable="@drawable/ic_launcher_background" />
+
+</adaptive-icon>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SymptomActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main container for the layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TextInputLayout with an AutoCompleteTextView for symptom selection -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:id="@+id/text_input_layout">
+
+            <!-- AutoCompleteTextView for displaying symptom options -->
+            <AutoCompleteTextView
+                android:layout_height="66dp"
+                android:inputType="none"
+                android:id="@+id/auto_complete_textview"
+                android:layout_width="match_parent"
+                android:hint="Select Symptom"/>
+
+            <!-- Slider for adjusting a value between 0 and 5 -->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="5"
+            android:layout_below="@+id/text_input_layout"
+            android:layout_margin="16dp"
+            android:stepSize="0.5"
+            style="@style/Widget.MaterialComponents.Slider"
+            android:layout_width="wrap_content"
+
+            android:id="@+id/discrete_slider" />
+
+        <!-- Button to add selected symptom to the list -->
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addToSymptoms"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_centerHorizontal="true"
+            android:text="Add selection to list"
+            android:layout_below="@id/discrete_slider"
+            android:layout_margin="16dp"/>
+
+        <!-- TextView to display the data selected so far -->
+        <TextView
+            android:id="@+id/dataSelectedSoFar"
+            android:layout_width="match_parent"
+
+            android:layout_below="@id/addToSymptoms"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp" />
+
+        <!-- Button to push the list of symptoms to the database -->
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/PushDataToDB"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:text="Push List to Database"
+            />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

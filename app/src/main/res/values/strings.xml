@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- The name of the application displayed on the launcher and in the app's settings -->
+    <string name="app_name">MyApplication</string>
+
+    <!-- Title for the Symptoms Screen activity -->
+    <string name="title_activity_symptoms_screen">symptoms_screen</string>
+
+    <!-- Symptoms Screen-related strings -->
+    <!-- Label for selecting symptoms; tools:ignore is used to suppress warnings about missing translations -->
+    <string name="select" tools:ignore="ExtraTranslation">Select Symptoms</string>
+</resources>

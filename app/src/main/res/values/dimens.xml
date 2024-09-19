@@ -1,0 +1,4 @@
+<resources>
+    <!-- Defines the margin for the Floating Action Button (FAB) -->
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
