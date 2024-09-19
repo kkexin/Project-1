@@ -1,9 +1,9 @@
 Project Overview
-This application (SymptomActivity) is a symptom aware application used to record and track the health status of users. Users can record their current health status by selecting pre-defined symptoms and rating them. The data will be stored in a SQLite local database for future reference.<br>
+This application (SymptomActivity) is a symptom aware application used to record and track the health status of users. Users can record their current health status by selecting pre-defined symptoms and rating them. The data will be stored in a SQLite local database for future reference.
 
 Question and Answer
-Question 1. Imagine you are new to the programming world and not proficient enough in coding.  But, you have a brilliant idea where you want to develop a context-sensing application like Project 1. You come across the Heath-Dev paper and want it to build your application. Specify what Specifications you should provide to the Health-Dev framework to develop the code ideally.<br>
-answer:<br>
+Question 1. Imagine you are new to the programming world and not proficient enough in coding.  But, you have a brilliant idea where you want to develop a context-sensing application like Project 1. You come across the Heath-Dev paper and want it to build your application. Specify what Specifications you should provide to the Health-Dev framework to develop the code ideally.
+answer:
 If we want to develop a context aware application centered on health like this, the specifications provided to the Health Dev framework should include the following points:<br>
 1. Sensor data requirements: Applications need to use mobile phone sensors (such as accelerometers, cameras) to collect health-related data, such as heart rate, respiratory rate, etc.<br>
 2. Symptom selection and scoring mechanism: The application should allow users to select corresponding symptoms from a predefined symptom list and score each symptom through a slider. The symptom list and rating will reflect the user's current health condition.<br>
